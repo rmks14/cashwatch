@@ -1,0 +1,216 @@
+var data = google.visualization.arrayToDataTable([
+        ['Category of expense', 'Amount'],
+        <?php
+            $sql="SELECT expensecategory,exp FROM expenses";
+            $fire=mysqli_query($conn,$sql);
+                while($result=mysqli_fetch_assoc($fire)){
+                    echo"['".$result['expensecategory']."',".$result['amt']."],";
+
+                }
+            
+        ?>
+
+
+
+        css:
+        activity:
+
+        .data-form {
+            background-color: gray;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .data-form input[type="text"],
+        .data-form input[type="number"],
+        .data-form input[type="date"] {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            box-sizing: border-box;
+            border-radius: 5px;
+        }
+
+        .submit-btn {
+            background-color: #f94b1b;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+
+        .submit-btn:hover {
+            background-color: #f74f1b; /* Darker orange */
+        }
+
+        h2 {
+            color: #f94b1b; /* Orange */
+        }
+
+        .table-container {
+            margin: 20px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f0f0f0; /* Light gray */
+            color: #333; /* Dark gray */
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2; /* Lighter gray */
+        }
+
+        .btn {
+            margin-right: 5px;
+        }
+
+        .btn-success {
+            background-color: #28a745; /* Green */
+            color: white;
+        }
+
+        .btn-danger {
+            background-color: #dc3545; /* Red */
+            color: white;
+        }
+
+
+        nav:
+
+        <?php
+    if (session_status() === PHP_SESSION_NONE) {
+        session_start();
+    }
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <style>
+        /* Resetting default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* Styling the navbar */
+        .navbar {
+            background-color: #333; /* Background color of the navbar */
+            padding: 10px 20px; /* Padding around navbar content */
+        }
+        
+        /* Styling the container div within the navbar */
+        .navdiv {
+            display: flex; /* Displaying flex to align items horizontally */
+            align-items: center; /* Aligning items vertically */
+            justify-content: space-between; /* Spacing out items evenly */
+            background: #333;
+            width: 100%; /* Make it horizontally full-width */
+        }
+        
+        /* Styling the logo */
+        .logodiv {
+            margin-right: auto; /* Pushing the logo to the far left */
+        }
+        
+        .logo-pic {
+            width: 150px; /* Increased width of the logo */
+            height: auto; /* Allowing height to adjust according to the width */
+        }
+        
+        /* Styling the navigation links */
+        ul {
+            list-style-type: none; /* Removing default bullet points */
+            display: flex; /* Displaying flex to align items horizontally */
+        }
+        
+        li {
+            margin-right: 20px; /* Spacing between list items */
+        }
+        
+        a {
+            text-decoration: none; /* Removing underline from links */
+            color: #fff; /* Link color */
+            transition: color 0.3s ease; /* Smooth color transition on hover */
+        }
+        
+        a:hover {
+            color: #ffc107; /* Link color on hover */
+        }
+        
+        /* Styling the sign-in and sign-up buttons */
+        button {
+            background-color: #ffc107; /* Button background color */
+            color: #333; /* Button text color */
+            border: none; /* Removing button border */
+            padding: 8px 15px; /* Padding inside the button */
+            border-radius: 5px; /* Rounded corners */
+            cursor: pointer; /* Changing cursor to pointer on hover */
+            transition: background-color 0.3s ease; /* Smooth background color transition on hover */
+        }
+        
+        button:hover {
+            background-color: #ffca28; /* Button background color on hover */
+        }
+    </style>
+</head>
+<body>
+    <?php
+        session_start();
+        if(isset($_SESSION['loggedin'])&& $_SESSION['loggedin']==true){
+           $loggedin=true;
+        }
+        else{
+            $loggedin=false;
+        }
+        echo '<nav class="navbar">
+            <div class="navdiv">
+                <div class="logodiv"><img class="logo-pic" src="logo-no-background.png" alt=""></div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#">Report</a></li>
+                </ul>';
+                if(!$loggedin){
+                    echo '<div class="login">
+                        <button><a href="login.php">Login</a></button>
+                    </div>
+                    <div class="signup">       
+                        <button><a href="register.php">SignUp</a></button>
+                    </div>';
+                }
+                
+                if($loggedin){
+                    echo'  <div class="logout">
+                    <button><a href="logout.php">Logout</a></button>
+                </div>
+            </div>
+        </div>
+        </nav>';}
+    ?>
+</body>
+</html>

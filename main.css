@@ -1,0 +1,66 @@
+/* main.css */
+
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling the navbar */
+.navbar {
+    background-color: #333; /* Background color of the navbar */
+    padding: 10px 20px; /* Padding around navbar content */
+}
+
+/* Styling the container div within the navbar */
+.navdiv {
+    display: flex; /* Displaying flex to align items horizontally */
+    align-items: center; /* Aligning items vertically */
+    justify-content: space-between; /* Spacing out items evenly */
+}
+
+/* Styling the logo */
+.logodiv {
+    margin-right: auto; /* Pushing the logo to the far left */
+}
+
+.logo-pic {
+    width: 50px; /* Set the width of the logo */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Styling the navigation links */
+ul {
+    list-style-type: none; /* Removing default bullet points */
+    display: flex; /* Displaying flex to align items horizontally */
+}
+
+li {
+    margin-right: 20px; /* Spacing between list items */
+}
+
+a {
+    text-decoration: none; /* Removing underline from links */
+    color: #fff; /* Link color */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+a:hover {
+    color: #ffc107; /* Link color on hover */
+}
+
+/* Styling the sign-in and sign-up buttons */
+button {
+    background-color: #ffc107; /* Button background color */
+    color: #333; /* Button text color */
+    border: none; /* Removing button border */
+    padding: 8px 15px; /* Padding inside the button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Changing cursor to pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth background color transition on hover */
+}
+
+button:hover {
+    background-color: #ffca28; /* Button background color on hover */
+}

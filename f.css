@@ -1,0 +1,148 @@
+.container1{
+  text-align: center;
+	margin-top: 30px;
+	margin-left: 30%;
+  background-color: #1d1e1f;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-right: 20px;
+  width: 40%;
+  border-radius: 10px;
+    
+    
+}
+
+
+.contaniner4 button{
+	background-color:#1d1e1f;
+	width: 99%;
+  text-align: left;
+	color: #ffff;
+	margin: 1px;	
+	box-shadow: none;
+	cursor: pointer;
+	font-size:17px;
+  padding: 1.5%;
+  text-decoration: none;
+  border: 0;
+  border-radius: 20px;
+}
+
+.button:hover {
+	background-color: #46494b;
+    
+  }
+
+.container2{
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 30%;
+  background-color: #1d1e1f;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-right: 20px;
+  width: 40%;
+  border-radius: 10px;
+
+}
+
+  
+.img1{
+  float: right;
+  width: 25px;
+  height: 20px;
+  }
+
+  .txt{
+  color: white;
+  text-align: left;
+  margin-left: 11px;
+  }
+
+  body{
+  font-family: sans-serif;
+  background-color: rgb(5,5,5);
+  }
+
+
+   img{
+    float: left;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+  }
+
+  .b1 h2{
+    padding-left: 170px;
+    padding-top: 120px;
+    
+  }
+
+  .B1{
+    display: block;
+    
+    padding-left: 200px;
+    width: 100px;
+    height: 100px;
+    
+  }
+
+  .b1{
+    margin-left: 568px;
+    color:white;
+    background-color: #46494b; 
+    width: 26.8%;
+    height: 240px;
+    border-radius: 10px;
+  }
+
+  .container3{
+    display: inline-flex;
+    width: 100%;
+    margin-top: 40px;
+  }
+
+
+  .B2{
+    width: 200px;
+    height: 200px;
+    
+    
+  }
+
+  .b2 h2{
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 100px;
+    
+  }
+
+.b2{
+  background-color: #46494b;
+  margin-left: 20px;
+  border-radius: 10px;
+  height: 240px;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+
+.container1 a{
+  text-decoration: none;
+  color: white;
+}
+
+
+.container5{
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 30%;
+  background-color: #1d1e1f;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-right: 20px;
+  width: 40%;
+  border-radius: 10px;
+
+}

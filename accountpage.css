@@ -1,0 +1,114 @@
+.fp{
+    color: white;
+    text-align: center;
+    height: 100%;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    
+}
+
+
+.container{
+    padding: 100px;
+    text-align: center;
+    background-color:#46494b; ;
+    color: white;
+    margin-top: 45px;
+    margin-left: 500px;
+    margin-right: 500px;
+}
+
+.password #inpbox{
+    margin-left: 15px;
+}
+
+.email #inpbox{
+    margin-left: 45px;
+}
+
+
+
+#inpbox {
+    padding: 7px 15px;
+    border-radius: 30px;
+    width: 150px;
+    margin-left: 10px;
+    resize: none;
+}
+
+
+
+body{
+    background-color:#1d1e1f ;
+    font-family: sans-serif;
+}
+
+.box2 button{
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    text-decoration: none;
+    width: auto;
+    will-change: transform,opacity;
+    z-index: 0;
+}
+
+.button:hover {
+    background: #F6F9FE;
+    color: #174ea6;
+  }
+  
+  .button:active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+  }
+  
+  .button:focus {
+    outline: none;
+    border: 2px solid #4285f4;
+  }
+    
+
+
+img{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 50px;
+    
+}
+
+
+.box2{
+    margin: 40px;
+}
+
+
+.box1 table {
+    margin-left: auto;
+    margin-right: auto;
+}
+

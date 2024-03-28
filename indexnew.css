@@ -1,0 +1,158 @@
+body {
+    background-color: #222629;
+    color: white;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 60px;
+}
+
+.main-description p {
+    font-size: 50px;
+    font-family: sans-serif;
+}
+
+.button-1 {
+    align-items: center;
+    background-color: #0A66C2;
+    border: 0;
+    border-radius: 100px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 20px;
+    max-width: 480px;
+    min-height: 40px;
+    min-width: 0px;
+    overflow: hidden;
+    padding: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    touch-action: manipulation;
+    transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+}
+
+.button-1:hover,
+.button-1:focus {
+    background-color: #16437E;
+    color: #ffffff;
+}
+
+.button-1:active {
+    background: #09223b;
+    color: rgba(255, 255, 255, .7);
+}
+
+.button-1:disabled {
+    cursor: not-allowed;
+    background: rgba(0, 0, 0, .08);
+    color: rgba(0, 0, 0, .3);
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+}
+
+* {
+    text-decoration: none;
+}
+
+.navbar {
+    background-color: #222629;
+    font-family: sans-serif;
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    justify-content: space-between;
+    color: white;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    padding: 10px 20px;
+    position: relative;
+}
+
+.nav li {
+    list-style: none;
+    display: inline-block;
+}
+
+li a {
+    color: white;
+    font-weight: bold;
+    margin-right: 25px;
+}
+
+.nav {
+    padding-left: 20px;
+}
+
+.button-2 {
+    background-color: #0A66C2;
+    margin-left: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 90px;
+    color: white;
+}
+
+.button-2:hover,
+.button-2:focus {
+    background-color: #16437E;
+    color: #ffffff;
+}
+
+.navbar ul li a:hover {
+    color: lightcyan;
+}
+
+.navbar ul li:hover .dropdwn_menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+}
+
+.dropdwn_menu {
+    display: none;
+}
+
+.dropdwn_menu ul {
+    display: block;
+    margin: 10px;
+}
+
+.dropdwn_menu ul li {
+    width: 150;
+    padding: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.content p {
+    margin: 5px 0;
+}
