@@ -97,9 +97,9 @@
     <select id="expcat" name="category">
         <option value="Food" <?php if(isset($row['category']) && $row['category'] == 'Food') echo 'selected'; ?>>Food</option>
         <option value="Travel" <?php if(isset($row['category']) && $row['category'] == 'Travel') echo 'selected'; ?>>Travel</option>
-        <option value="Travel" <?php if(isset($row['category']) && $row['category'] == 'Medical') echo 'selected'; ?>>medical</option>
-        <option value="Travel" <?php if(isset($row['category']) && $row['category'] == 'Rent/eEMI') echo 'selected'; ?>>rent/EMI</option>
-        <option value="Travel" <?php if(isset($row['category']) && $row['category'] == 'Other') echo 'selected'; ?>>Other</option>
+        <option value="Medical" <?php if(isset($row['category']) && $row['category'] == 'Medical') echo 'selected'; ?>>medical</option>
+        <option value="Rent/EMI" <?php if(isset($row['category']) && $row['category'] == 'Rent/EMI') echo 'selected'; ?>>rent/EMI</option>
+        <option value="Other" <?php if(isset($row['category']) && $row['category'] == 'Other') echo 'selected'; ?>>Other</option>
         
     </select><br>
     Enter Amount:<br>
